@@ -1,0 +1,21 @@
+*{
+    border-width: 1px;
+    border-color: antiquewhite;
+    border-style: solid;
+}
+.header{
+    text-align: center;
+}
+.header-logo{
+    width: 15vh;
+    height: 15vh;
+}
+
+.nav-bar{
+text-align: center;
+}
+
+.gallery-img{
+    width: 20vh;
+    height: 20vh;
+}
