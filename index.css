@@ -1,11 +1,14 @@
 *{
     border-width: 1px;
-    border-color: antiquewhite;
+    border-color: rgb(219, 216, 216);
     border-style: solid;
 }
+
 .header{
     text-align: center;
+    padding-top: 3vh;
 }
+
 .header-logo{
     width: 15vh;
     height: 15vh;
@@ -13,9 +16,24 @@
 
 .nav-bar{
 text-align: center;
+padding-top: 4vh;
+padding-bottom: 4vh;
+}
+.botones{
+    font-family: Helvetica;
+    font-size: larger;
+    padding: 3vh
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 45vh 45vh 45vh;
+    grid-template-rows: repeat(2, 45vh 45vh);
+    justify-items: center;
+    justify-content: center;
 }
 
 .gallery-img{
-    width: 20vh;
-    height: 20vh;
+    width: 40vh;
+    height: 40vh;
 }
