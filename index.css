@@ -4,6 +4,10 @@
     border-style: solid;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 .header{
     text-align: center;
     padding-top: 3vh;
@@ -15,14 +19,17 @@
 }
 
 .nav-bar{
-text-align: center;
-padding-top: 4vh;
-padding-bottom: 4vh;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
 }
+
 .botones{
     font-family: Helvetica;
     font-size: larger;
-    padding: 3vh
+    padding: 3vh;
+    border: none;
+    background: none;
 }
 
 .grid-layout{
