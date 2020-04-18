@@ -1,8 +1,8 @@
-*{
+/**{
     border-width: 1px;
     border-color: rgb(219, 216, 216);
     border-style: solid;
-}
+}*/
 
 html {
     overflow-y: scroll;
@@ -24,12 +24,30 @@ html {
     padding-bottom: 4vh;
 }
 
+.nav-bar input{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+input:checked + .spamm {
+    padding-bottom: 0.4vh;
+    color: rgb(73, 73, 73);
+    border-bottom: solid gainsboro;
+}
+
 .botones{
     font-family: Helvetica;
     font-size: larger;
     padding: 3vh;
     border: none;
     background: none;
+    color: rgb(73, 73, 73);
+}
+
+.botones:hover{
+    color: rgb(202, 200, 200); 
 }
 
 .grid-layout{

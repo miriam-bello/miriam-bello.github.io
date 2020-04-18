@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Miriam Bello</title>
     <meta charset="UTF-8">
@@ -12,53 +13,80 @@
     <div class="header"><img class="header-logo" src="logo.png"></div>
     <div>
         <div class="nav-bar">
-            <button id="gallery-button" class="botones">Gallery</button>
-            <button id="contact-button" class="botones">Contact</button>
+            <label class="botones">
+                <input type="radio" name="nav-bar" id="gallery-button" checked>
+                <span class="spamm">Gallery</span>
+            </label>
+            <label class="botones">
+                <input type="radio" name="nav-bar" id="cv-button">  
+                <span class="spamm">CV</span>
+                </label>
+            <label class="botones">
+                <input type="radio"  name="nav-bar" id="contact-button"> 
+                <span class="spamm">Contact</span>
+            </label>
         </div>
     </div>
 
     <div id="content">
         <div id="gallery" class="grid-layout">
             <div>
-                <img class="gallery-img" src="render1.png"></img>
+                <img class="gallery-img" src="render1.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render2.png"></img>
+                <img class="gallery-img" src="render2.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render4.png"></img>
+                <img class="gallery-img" src="render4.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render5.png"></img>
+                <img class="gallery-img" src="render5.jpg"></img>
             </div>
             <div>
                 <img class="gallery-img" src="render6.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render14.png"></img>
+                <img class="gallery-img" src="render14.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render13.png"></img>
+                <img class="gallery-img" src="render13.jpg"></img>
             </div>
             <div>
                 <img class="gallery-img" src="render15.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render10.png"></img>
+                <img class="gallery-img" src="render10.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render11.png"></img>
+                <img class="gallery-img" src="render11.jpg"></img>
             </div>
             <div>
                 <img class="gallery-img" src="render12.jpg"></img>
             </div>
             <div>
-                <img class="gallery-img" src="render7.png"></img>
+                <img class="gallery-img" src="render7.jpg"></img>
             </div>
         </div>
+    </div>
 
-        <div id="contact-info">
-            Información de contacto
+    <div id="cv-info">
+        <div>
+            <div>
+                sobre mi
+            </div>
+            <div>
+                skills
+            </div>
+            <div>
+                idiomas
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-info">
+        <div>
+            Space potato
+            <input type="text" name="caja-contacto" class:"input-text">
         </div>
     </div>
 
