@@ -62,3 +62,30 @@ input:checked + .spamm {
     width: 40vh;
     height: 40vh;
 }
+
+#contact-info{
+    text-align: center;
+}
+
+.instagram-link, .linkedin-link{
+    background-size: contain;
+    width: 8vh;
+    height: 8vh;
+    display: inline-block;
+}
+
+.linkedin-link{
+    background-image: url(img/res/linkedin.png);
+}
+
+.instagram-link{
+    background-image: url(img/res/instagram.png);
+}
+
+#form-div, #social-media-div{
+    display: inline-block;
+}
+
+#instagram-div, #linkedin-div{
+display: inline;
+}
