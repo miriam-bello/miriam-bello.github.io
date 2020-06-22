@@ -65,6 +65,10 @@ input:checked + .spamm {
 
 #contact-info{
     text-align: center;
+    font-family: Helvetica;
+    font-size:medium;
+    padding: 3vh;
+    color: rgb(73, 73, 73);
 }
 
 .instagram-link, .linkedin-link{
