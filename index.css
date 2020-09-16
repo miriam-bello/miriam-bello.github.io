@@ -73,8 +73,8 @@ input:checked + .spamm {
 
 .instagram-link, .linkedin-link{
     background-size: contain;
-    width: 8vh;
-    height: 8vh;
+    width: 4vh;
+    height: 4vh;
     display: inline-block;
 }
 
