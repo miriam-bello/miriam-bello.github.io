@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Miriam Bello - Portfolio 3D</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="proyectos.css" />
+    <script defer src="js/view_controller.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header con logo y navegación -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="header-logo" src="img/res/logo.png" alt="Miriam Bello Logo">
+                </a>
+            </div>
+            <p class="subtitle">Artista 3D - Diseñadora - Programadora</p>
+            <!-- Navegación superior -->
+            <nav class="top-nav">
+                <a href="index.html" class="nav-link">Galería</a>
+                <a href="proyectos.html" class="nav-link">Proyectos</a>
+                <a href="curriculum.html" class="nav-link">Cv</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main id="content">
+            <div class="cv-container">
+                <div class="cv-container">
+
+                    <!-- Proyecto 1-->
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <h2 class="project-title">App reading nook </h2>
+                            <span class="project-category">Aplicación Móvil</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-description">
+                                <h3>Descripción</h3>
+                                <p>Esta aplicación está diseñada para ayudar a los amantes de los libros a organizar su
+                                    experiencia de lectura de manera personalizada. La plataforma interactúa con la
+                                    API de Google que tiene un amplio catálogo de libros, permitiendo a los usuarios explorar,
+                                    buscar y gestionar sus lecturas de forma intuitiva.</p>
+                                <p>Funcionalidades principales: Búsqueda y exploración de Libros, listas, sistema de
+                                    Reseñas y valoraciones y perfil del usuario</p>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h3>Tecnologías</h3>
+                                    <div class="tech-list">
+                                        <span class="tech-tag">Room</span>
+                                        <span class="tech-tag">Data Store</span>
+                                        <span class="tech-tag">Retrofit</span>
+                                        <span class="tech-tag">Kotlin Jetpack Compose</span>
+                                        <span class="tech-tag">Gradle</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-links">
+                                    <h3>Enlaces</h3>
+                                    <div class="link-item">
+                                        <i class="fab fa-github"></i>
+                                        <a href="https://github.com/miriam-bello/book-nook.git" target="_blank">Github</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Proyecto 2-->
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-header">
+                            <h2 class="project-title">Videojuego Miau miau valley</h2>
+                            <span class="project-category">Videojuego</span>
+                        </div>
+
+                        <div class="project-card-body">
+                            <div class="project-description">
+                                <h3>Descripción</h3>
+                                <p>¡Este gato solo quiere una cosa: salir de la granja para jugar con su primo… pero una
+                                    vaca enorme bloquea la salida! Para convencerla de que se mueva, tendrás que plantar
+                                    y cosechar frutas frescas que la vaca adora.</p>
+                            </div>
+
+                            <div class="project-details">
+                                <div class="project-tech">
+                                    <h3>Tecnologías</h3>
+                                    <div class="tech-list">
+                                        <span class="tech-tag">Unity</span>
+                                        <span class="tech-tag">C#</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-links">
+                                    <h3>Enlaces</h3>
+                                    <div class="link-item">
+                                        <i class="fab fa-github"></i>
+                                        <a href="https://github.com/miriam-bello/proyectoUnity#"
+                                            target="_blank">Github</a>
+                                    </div>
+                                    <div class="link-item">
+                                        <i class="fa-brands fa-itch-io"></i>
+                                        <a href="https://miriambellodavila.itch.io/miaumiauvalley" target="_blank">Itch
+                                            io</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> Miriam Bello. All rights reserved.</p>
+            <p class="footer-note">3D Art & Digital Design</p>
+        </footer>
+    </div>
+
+    <script>
+        // Año actual en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Marcar enlace activo
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
