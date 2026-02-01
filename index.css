@@ -422,7 +422,6 @@ main {
     border-top: 1px solid #eee;
     color: #777;
     font-size: 0.9rem;
-    background-color: white;
 }
 
 .footer-note {
@@ -444,17 +443,17 @@ main {
         gap: 40px;
         padding: 40px 30px;
     }
-    
+
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 20px;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .top-nav {
         position: static;
         justify-content: center;
@@ -466,35 +465,35 @@ main {
     .header {
         padding: 30px 0 15px;
     }
-    
+
     .subtitle {
         font-size: 1rem;
         letter-spacing: 2px;
     }
-    
+
     .top-nav {
         gap: 10px;
     }
-    
+
     .nav-link {
         font-size: 0.85rem;
         padding: 6px 12px;
     }
-    
+
     .contact-wrapper {
         padding: 30px 20px;
     }
-    
+
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
         gap: 15px;
     }
-    
+
     .section-title,
     .skills-title {
         font-size: 1.6rem;
     }
-    
+
     .skill-category {
         padding: 20px;
     }
@@ -504,31 +503,31 @@ main {
     .container {
         padding: 0 15px;
     }
-    
+
     .header {
         padding: 25px 0 10px;
     }
-    
+
     .header-logo {
         max-width: 120px;
     }
-    
+
     .top-nav {
         flex-direction: column;
         gap: 8px;
         align-items: center;
     }
-    
+
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .skills-container {
         padding: 20px 0;
         margin-bottom: 40px;
     }
-    
+
     .footer {
         padding: 20px 0;
     }
@@ -536,11 +535,21 @@ main {
 
 /* Efectos de carga */
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.gallery-item, .skill-category, .form-section, .social-section {
+.gallery-item,
+.skill-category,
+.form-section,
+.social-section {
     animation: fadeIn 0.5s ease forwards;
 }
 
