@@ -1,11 +1,21 @@
-//Eventos de click para mostrar secciones de galería, contacto y currículum
-document.getElementById('contact-info').style.display = "none";
 
-document.getElementById('contact-button').addEventListener('click', () => {
-    document.getElementById('gallery').style.display = "none";
-    document.getElementById('contact-info').style.display = null;
-});
-document.getElementById('gallery-button').addEventListener('click', () => {
-    document.getElementById('contact-info').style.display = "none";
-    document.getElementById('gallery').style.display = null; 
+// navigation.js - Funcionalidad común para todas las páginas
+document.addEventListener('DOMContentLoaded', function() {
+    // Marcar enlace activo
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+    
+    // Año actual en el footer
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 });

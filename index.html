@@ -1,117 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>Miriam Bello</title>
+    <title>Miriam Bello - Portfolio 3D</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <script defer src="js/view_controller.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="container">
+        <!-- Header con logo y navegación -->
+        <header class="header">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img class="header-logo" src="img/res/logo.png" alt="Miriam Bello Logo">
+                </a>
+            </div>
+            <p class="subtitle">Artista 3D - Diseñadora - Programadora</p>
+            <!-- Navegación superior -->
+            <nav class="top-nav">
+                <a href="curriculum.html" class="nav-link">Cv</a>
+                <a href="contact.html" class="nav-link">Contacto</a>
+            </nav>
+        </header>
 
-    <div class="header"><img class="header-logo" src="img/res/logo.png"></div>
-    <div>
-        <div class="nav-bar">
-            <label class="botones">
-                <input type="radio" name="nav-bar" id="gallery-button" checked>
-                <span class="spamm">Gallery</span>
-            </label>
-            <label class="botones">
-                <input type="radio" name="nav-bar" id="contact-button">
-                <span class="spamm">Contact</span>
-            </label>
-        </div>
+        <!-- Contenido principal -->
+        <main id="content">
+            <!-- Galería -->
+            <div id="gallery" class="gallery-container">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render1.jpg" alt="Nintendo Switch">
+                        <div class="img-overlay">
+                            <div class="img-title">Nintendo Switch</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render2.jpg" alt="Gamecube">
+                        <div class="img-overlay">
+                            <div class="img-title">Gamecube</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render19.jpg" alt="Concept packaging">
+                        <div class="img-overlay">
+                            <div class="img-title">Concept packaging</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render16.jpg" alt="Concept cartucho Nintendo Switch">
+                        <div class="img-overlay">
+                            <div class="img-title">Concept cartucho Nintendo Switch</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render4.jpg" alt="R2D2">
+                        <div class="img-overlay">
+                            <div class="img-title">R2D2</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render14.jpg" alt="Escudo, acha, arco y flechas">
+                        <div class="img-overlay">
+                            <div class="img-title">Escudo, acha, arco y flechas</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render13.jpg" alt="Bass">
+                        <div class="img-overlay">
+                            <div class="img-title">Bass</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render21.jpg" alt="Concept banda sonora">
+                        <div class="img-overlay">
+                            <div class="img-title">Concept banda sonora</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render15.jpg" alt="Gameboy">
+                        <div class="img-overlay">
+                            <div class="img-title">Gameboy</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render11.jpg" alt="Lámpara">
+                        <div class="img-overlay">
+                            <div class="img-title">Lámpara</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render24.png" alt="Mueble">
+                        <div class="img-overlay">
+                            <div class="img-title">Mueble</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render22.jpg" alt="Concept portada">
+                        <div class="img-overlay">
+                            <div class="img-title">Concept portada</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render25.jpg" alt="Diseño Times new roman">
+                        <div class="img-overlay">
+                            <div class="img-title">Diseño Times new roman</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render23.jpg" alt="Personaje Jouney">
+                        <div class="img-overlay">
+                            <div class="img-title">Personaje Jouney</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render5.jpg" alt="Kinkaku-ji">
+                        <div class="img-overlay">
+                            <div class="img-title">Kinkaku-ji</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img class="gallery-img" src="img/gallery/render26.jpg" alt="Ramen">
+                        <div class="img-overlay">
+                            <div class="img-title">Ramen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de contacto -->
+            <div id="contact-info" class="contact-container">
+                <div class="contact-wrapper">
+                    <div class="form-section">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-subtitle">Have a project in mind? Let's collaborate!</p>
+
+                        <div id="form-div">
+                            <form
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdAR5gT0upgy5Fx9cmNUgFfpCcTHOrJ73X2DFo7vdx28vwUzQ/formResponse"
+                                target="_self" method="POST" id="contact-form">
+
+                                <div class="form-group">
+                                    <label for="name">Name*</label>
+                                    <input type="text" id="name" name="entry.2005620554" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email*</label>
+                                    <input type="email" id="email" name="entry.1045781291" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="entry.839337160" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h2 class="section-title">Connect With Me</h2>
+                        <p class="section-subtitle">Follow my work and get in touch</p>
+
+                        <div id="social-media-div" class="social-icons">
+                            <a class="social-link instagram" href="https://www.instagram.com/bello3d/" target="_blank"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a class="social-link linkedin" href="https://www.linkedin.com/in/miriam-bello-5a18ba133/"
+                                target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a class="social-link email" href="mailto:example@example.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a class="social-link portfolio" href="#" aria-label="Portfolio">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Based in [Your City/Country]</p>
+                            <p><i class="fas fa-clock"></i> Available for freelance projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; <span id="current-year"></span> Miriam Bello. All rights reserved.</p>
+            <p class="footer-note">3D Art & Digital Design</p>
+        </footer>
     </div>
 
-    <div id="content">
-        <div id="gallery" class="grid-layout">
-            <div>
-                <img class="gallery-img" src="img/gallery/render1.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render2.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render19.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render16.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render4.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render14.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render13.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render21.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render15.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render11.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render24.png"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render22.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render25.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render23.jpg"></img>
-            </div>
-            <div>
-                <img class="gallery-img" src="img/gallery/render5.jpg"></img>
-            </div>
-        </div>
-    </div>
+    <script>
+        // Año actual en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
+        // Simulación básica de cambio entre galería y contacto
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryButton = document.getElementById('gallery-button');
+            const contactButton = document.getElementById('contact-button');
+            const gallery = document.getElementById('gallery');
+            const contactInfo = document.getElementById('contact-info');
 
-    <div id="contact-info" >
-        
-        <div id="form-div">
-            <form
-                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdAR5gT0upgy5Fx9cmNUgFfpCcTHOrJ73X2DFo7vdx28vwUzQ/formResponse"
-                target="_self" method="POST" id="contact-form">
+            // Inicialmente mostrar galería, ocultar contacto
+            contactInfo.style.display = 'none';
 
-                <label> Name*<br><span>
-                        <input type="text" name="entry.2005620554"></span>
-                </label><br>
-                <br>
+            galleryButton.addEventListener('change', function () {
+                if (this.checked) {
+                    gallery.style.display = 'block';
+                    contactInfo.style.display = 'none';
+                }
+            });
 
-                <label> Email*<br><span>
-                        <input type="email" name="entry.1045781291"></span>
-                </label><br>
-                <br>
-
-                <label><br><textarea name="entry.839337160" data-initial-value=""></textarea></span>
-                </label>
-
-                <br><input type="submit" value="Enviar">
-
-            </form>
-        </div>
-        
-        <br><br><br><div id="social-media-div">
-            <div id="instagram-div">
-                <a class="instagram-link"href="https://www.instagram.com/bello3d/"></a>
-            </div>
-            <div id="linkedin-div">
-                <a class="linkedin-link" href="https://www.linkedin.com/in/miriam-bello-5a18ba133/"></a>
-            </div>
-        </div><br>
-        <br>
-    </div>
-
-
+            contactButton.addEventListener('change', function () {
+                if (this.checked) {
+                    gallery.style.display = 'none';
+                    contactInfo.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
